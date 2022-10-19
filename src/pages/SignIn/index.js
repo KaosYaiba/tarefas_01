@@ -6,21 +6,21 @@ import * as Animatable from 'react-native-animatable'
 export default function SignIn() {
     return (
         <View style={StyleSheet.container}>
-         <Animatable.view animation="fadeInLeft" delay={500} style={StyleSheet.containerHeader}>
-            <text style={styles.message}>Bem-vindo(a)</text>
-         </Animatable.view>
+         <Animatable.View animation="fadeInLeft" delay={500} style={StyleSheet.containerHeader}>
+            <text style={style.message}>Bem-vindo(a)</text>
+         </Animatable.View>
 
-           <Animatable.view animation="fadeInUp" style={styles.containerForm}>
-            <Text Style={styles.title}>Email</Text>
+           <Animatable.View animation="fadeInUp" style={style.containerForm}>
+            <Text Style={style.title}>Email</Text>
             <TextInput
             placeholder="Digite um email..."
-            style={styles.input}
+            style={style.input}
             />
 
-           <Text Style={styles.title}>Senha</Text>
+           <Text Style={style.title}>Senha</Text>
             <TextInput
             placeholder="Sua senha..."
-            style={styles.input}
+            style={style.input}
             />
 
             <TouchableOpacity style={style.button}>
@@ -35,7 +35,7 @@ export default function SignIn() {
 
 
 
-           </Animatable.view>
+           </Animatable.View>
 
         </View>
        );

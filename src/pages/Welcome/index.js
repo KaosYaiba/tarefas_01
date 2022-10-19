@@ -1,11 +1,5 @@
 import React from 'react';
-import {
-   View,
-   Text,
-   StyleSheet,
-   Image,
-   TouchableOpacity
-   } from 'react-native';
+import {View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 
    import * as Animatable from 'react-native-animatable';
 
@@ -14,35 +8,35 @@ import {
 export default function Welcome() {
    const navigation = useNavigation();
     return (
-        <View style={styles.container}>
+        <View style={style.container}>
 
-           <view style={styles.containerLogo}>
+           <view style={style.containerLogo}>
             <Animatable.Image
             animation="flipInY" 
             source={require('../../assets/logo.png')}
-            style= {{ width: '100%' }}
+            style={{ width: '100%' }}
             resizeMode= "contain"
             />
            </view>
 
-           <Animatable.view delay={600} animation="fadeInUp" style={styles.containerform}>
-            <Text style={styles.title}>Mensagens e chamadas em qualquer lugar!</Text>
-            <Text style={styles.text}>Faça o login</Text>
+           <Animatable.View delay={600} animation="fadeInUp" style={style.containerform}>
+            <Text style={style.title}>Mensagens e chamadas em qualquer lugar!</Text>
+            <Text style={style.text}>Faça o login</Text>
 
             <TouchableOpacity 
-             style={styles.button}>
+             style={style.button}>
              onPress={() => navigation.navigate('SignIn')}
                <Text style={style.buttonText}>Entrar</Text>
             </TouchableOpacity>
 
-           </Animatable.view>
+           </Animatable.View>
 
         </View>
        );
    
     }
 
-    const styles = StyleSheet.create({
+    const style = StyleSheet.create({
       container: {
        flex:1,
        backgroundColor: "#8e38d9",
@@ -87,5 +81,5 @@ export default function Welcome() {
          fontSize: 18,
          color: 'FFF',
          fontWeight: 'bold',
-      }
+      },
     })
