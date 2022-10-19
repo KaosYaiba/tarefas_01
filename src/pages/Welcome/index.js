@@ -8,9 +8,9 @@ import {View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native';
 export default function Welcome() {
    const navigation = useNavigation();
     return (
-        <View style={style.container}>
+        <View style={styles.container}>
 
-           <view style={style.containerLogo}>
+           <view style={styles.containerLogo}>
             <Animatable.Image
             animation="flipInY" 
             source={require('../../assets/logo.png')}
@@ -19,14 +19,14 @@ export default function Welcome() {
             />
            </view>
 
-           <Animatable.View delay={600} animation="fadeInUp" style={style.containerform}>
-            <Text style={style.title}>Mensagens e chamadas em qualquer lugar!</Text>
-            <Text style={style.text}>Faça o login</Text>
+           <Animatable.View delay={600} animation="fadeInUp" style={styles.containerform}>
+            <Text style={styles.title}>Mensagens e chamadas em qualquer lugar!</Text>
+            <Text style={styles.text}>Faça o login</Text>
 
             <TouchableOpacity 
-             style={style.button}>
+             style={styles.button}>
              onPress={() => navigation.navigate('SignIn')}
-               <Text style={style.buttonText}>Entrar</Text>
+               <Text style={styles.buttonText}>Entrar</Text>
             </TouchableOpacity>
 
            </Animatable.View>
@@ -36,7 +36,7 @@ export default function Welcome() {
    
     }
 
-    const style = StyleSheet.create({
+    const styles = StyleSheet.create({
       container: {
        flex:1,
        backgroundColor: "#8e38d9",

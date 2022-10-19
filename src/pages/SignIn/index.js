@@ -7,29 +7,29 @@ export default function SignIn() {
     return (
         <View style={StyleSheet.container}>
          <Animatable.View animation="fadeInLeft" delay={500} style={StyleSheet.containerHeader}>
-            <text style={style.message}>Bem-vindo(a)</text>
+            <text style={styles.message}>Bem-vindo(a)</text>
          </Animatable.View>
 
-           <Animatable.View animation="fadeInUp" style={style.containerForm}>
-            <Text Style={style.title}>Email</Text>
+           <Animatable.View animation="fadeInUp" style={styles.container}>
+            <Text Style={styles.title}>Email</Text>
             <TextInput
             placeholder="Digite um email..."
-            style={style.input}
+            style={styles.input}
             />
 
-           <Text Style={style.title}>Senha</Text>
+           <Text Style={styles.title}>Senha</Text>
             <TextInput
             placeholder="Sua senha..."
-            style={style.input}
+            style={styles.input}
             />
 
-            <TouchableOpacity style={style.button}>
-               <Text style={style.buttonText}>Acessar</Text>
+            <TouchableOpacity style={styles.button}>
+               <Text style={styles.buttonText}>Acessar</Text>
             </TouchableOpacity>
 
 
-            <TouchableOpacity style={style.buttonRegister}>
-               <Text style={style.registerText}>Não possui uma conta? Cadastre-se</Text>
+            <TouchableOpacity style={styles.buttonRegister}>
+               <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
             </TouchableOpacity>
 
 
@@ -43,7 +43,7 @@ export default function SignIn() {
     }
 
 
-    const style = StyleSheet.create({
+    const styles = StyleSheet.create({
       container: {
          flex:1,
          backgroundColor: "#8e38d9",
