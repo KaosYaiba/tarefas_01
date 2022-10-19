@@ -10,7 +10,7 @@ export default function SignIn() {
             <text style={styles.message}>Bem-vindo(a)</text>
          </Animatable.View>
 
-           <Animatable.View animation="fadeInUp" style={styles.container}>
+           <Animatable.View animation="fadeInUp" style={styles.containerForm}>
             <Text Style={styles.title}>Email</Text>
             <TextInput
             placeholder="Digite um email..."
