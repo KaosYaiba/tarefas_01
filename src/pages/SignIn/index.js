@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, TextInput, TouchableOpacity} from 'react-native';
 
-import * as Animatable from 'react-native-animatable'
+import * as Animatable from 'react-native-animatable';
 
 export default function SignIn() {
     return (
@@ -10,7 +10,7 @@ export default function SignIn() {
             <Text style={styles.message}>Bem-vindo(a)!</Text>
          </Animatable.View>
 
-           <Animatable.View animation="fadeInUp" style={styles.containerForm}>
+           <Animatable.View animation="fadeInUp" style={styles.form}>
             <Text Style={styles.title}>Email</Text>
             <TextInput
             placeholder="Digite um email..."
