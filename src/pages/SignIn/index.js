@@ -52,7 +52,7 @@ export default function SignIn() {
             fontWeight: 'bold',
             color: '#FFF',
          },
-         containerForm: {
+         form: {
             backgroundColor: '#FFF',
             flex: 1,
             borderTopLeftRadius: 25,
