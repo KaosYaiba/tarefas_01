@@ -17,26 +17,25 @@ export default function Welcome() {
             style={{ width: '100%' }}
             resizeMode= "contain"
             />
-           </View>
+         </View>
 
-           <Animatable.View delay={600} animation="fadeInUp" style={styles.containerform}>
+           <Animatable.View delay={600} animation="fadeInUp" style={styles.containerForm}>
             <Text style={styles.title}>Mensagens e chamadas em qualquer lugar!</Text>
             <Text style={styles.text}>Faça o login</Text>
 
             <TouchableOpacity 
              style={styles.button}>
              onPress={() => navigation.navigate('SignIn')}
-               <Text style={styles.buttonText}>Entrar</Text>
+            <Text style={styles.buttonText}>Entrar</Text>
             </TouchableOpacity>
 
            </Animatable.View>
 
-        </View>
-       );
+         </View>
+       )
    
-    }
-
-    const styles = StyleSheet.create({
+}
+   const styles = StyleSheet.create({
       container: {
        flex:1,
        backgroundColor: "#8e38d9",
@@ -47,7 +46,7 @@ export default function Welcome() {
          justifyContent: 'center',
          alighItems: 'center',
       },
-      containerform: {
+      containerForm: {
          flex: 1,
          backgroundColor: "#FFF",
          borderTopLeftRadius: 25,
@@ -82,4 +81,4 @@ export default function Welcome() {
          color: 'FFF',
          fontWeight: 'bold',
       },
-    })
+   })

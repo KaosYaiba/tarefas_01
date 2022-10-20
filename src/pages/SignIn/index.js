@@ -18,7 +18,7 @@ export default function SignIn() {
             />
 
            <Text Style={styles.title}>Senha</Text>
-            <TextInput
+           <TextInput
             placeholder="Sua senha..."
             style={styles.input}
             />
@@ -29,23 +29,18 @@ export default function SignIn() {
 
 
             <TouchableOpacity style={styles.buttonRegister}>
-               <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
+            <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
             </TouchableOpacity>
 
-
-
-
-           </Animatable.View>
+         </Animatable.View>
 
         </View>
-       );
+      )
    
-    }
-
-
-    const styles = StyleSheet.create({
+};
+   const styles = StyleSheet.create({
       container: {
-         flex: 1,
+         flex:1,
          backgroundColor: "#8e38d9",
          containerHeader:{
             marginTop: '14%',
@@ -94,8 +89,8 @@ export default function SignIn() {
             alighSelf: 'center',
          },
          registerText: {
-            color: '#a1a1a1',
+            color: '#a1a1a1'
          },
 
       }
-    });
+    })
