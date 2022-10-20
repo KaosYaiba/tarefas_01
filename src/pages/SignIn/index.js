@@ -40,7 +40,7 @@ export default function SignIn() {
 };
    const styles = StyleSheet.create({
       container: {
-         flex:1,
+         flex: '1',
          backgroundColor: "#8e38d9",
          containerHeader:{
             marginTop: '14%',
@@ -48,44 +48,44 @@ export default function SignIn() {
             paddingStart: '5%',
          },
          message:{
-            fontSize: 28,
+            fontSize: '28',
             fontWeight: 'bold',
             color: '#FFF',
          },
          form: {
             backgroundColor: '#FFF',
-            flex: 1,
-            borderTopLeftRadius: 25,
-            borderTopRightRadius: 25,
+            flex: '1',
+            borderTopLeftRadius: '25',
+            borderTopRightRadius: '25',
             paddingStart: '5%',
             paddingEnd: '5%',
          },
          title:{
-            fontSize: 20,
-            marginTop: 28,
+            fontSize: '20',
+            marginTop: '28',
          },
          input:{
-            borderBottomWidth: 1,
-            height: 40,
-            marginBottom: 12,
-            fontSize: 16,
+            borderBottomWidth: '1',
+            height: '40',
+            marginBottom: '12',
+            fontSize: '16',
          },
          button:{
             backgroundColor: "#8e38d9",
             width: '100%',
-            borderRadius: 4,
-            paddingVertical: 8,
-            marginTop: 14,
+            borderRadius: '4',
+            paddingVertical: '8',
+            marginTop: '14',
             justifyContent: 'center',
             alighItens: 'center',
          },
          buttonText:{
             color: '#FFF',
-            fontSize: 18,
+            fontSize: '18',
             fontWeight: 'bold',
          },
          buttonRegister:{
-            marginTop: 14,
+            marginTop: '14',
             alighSelf: 'center',
          },
          registerText: {

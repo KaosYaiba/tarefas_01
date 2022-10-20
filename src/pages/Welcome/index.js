@@ -37,29 +37,29 @@ export default function Welcome() {
 }
    const styles = StyleSheet.create({
       container: {
-       flex:1,
+       flex: '1',
        backgroundColor: "#8e38d9",
       },
       containerLogo:{
-         flex:2,
+         flex:'2',
          backgroundColor: "#8e38d9",
          justifyContent: 'center',
          alighItems: 'center',
       },
       containerForm: {
-         flex: 1,
+         flex: '1',
          backgroundColor: "#FFF",
-         borderTopLeftRadius: 25,
-         borderTopRightRadius: 25,
+         borderTopLeftRadius: '25',
+         borderTopRightRadius: '25',
          paddingStart: '5%',
          paddingEnd: '5%'
 
       },
       title:{
-         fontSize: 24,
+         fontSize: '24',
          fontWeight: 'bold',
-         marginTop: 28,
-         marginBottom: 12,
+         marginTop: '28',
+         marginBottom: '12',
       },
       text:{
          color: '#a1a1a1',
@@ -67,8 +67,8 @@ export default function Welcome() {
       button:{
          position: 'absolute',
          backgroundColor: "#8e38d9",
-         borderRadius: 50,
-         paddingVertical: 8,
+         borderRadius: '50',
+         paddingVertical: '8',
          width: '60%',
          alighSelf: 'center',
          bottom: '15%',
@@ -77,7 +77,7 @@ export default function Welcome() {
 
       },
       buttonText: {
-         fontSize: 18,
+         fontSize: '18',
          color: 'FFF',
          fontWeight: 'bold',
       },
