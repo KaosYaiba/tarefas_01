@@ -7,7 +7,7 @@ export default function SignIn() {
     return (
         <View style={StyleSheet.container}>
          <Animatable.View animation="fadeInLeft" delay={500} style={StyleSheet.containerHeader}>
-            <Text style={styles.message}>Bem-vindo(a)!</Text>
+            <Text style={styles.message}>Bem-vindo(a)</Text>
          </Animatable.View>
 
            <Animatable.View animation="fadeInUp" style={styles.form}>
@@ -35,12 +35,12 @@ export default function SignIn() {
          </Animatable.View>
 
         </View>
-      )
+      );
    
 };
    const styles = StyleSheet.create({
       container: {
-         flex: '1',
+         flex: 1,
          backgroundColor: "#8e38d9",
          containerHeader:{
             marginTop: '14%',
@@ -48,44 +48,44 @@ export default function SignIn() {
             paddingStart: '5%',
          },
          message:{
-            fontSize: '28',
+            fontSize: 28,
             fontWeight: 'bold',
             color: '#FFF',
          },
          form: {
             backgroundColor: '#FFF',
-            flex: '1',
-            borderTopLeftRadius: '25',
-            borderTopRightRadius: '25',
+            flex: 1,
+            borderTopLeftRadius: 25,
+            borderTopRightRadius: 25,
             paddingStart: '5%',
             paddingEnd: '5%',
          },
          title:{
-            fontSize: '20',
-            marginTop: '28',
+            fontSize: 20,
+            marginTop: 28,
          },
          input:{
-            borderBottomWidth: '1',
-            height: '40',
-            marginBottom: '12',
-            fontSize: '16',
+            borderBottomWidth: 1,
+            height: 40,
+            marginBottom: 12,
+            fontSize: 16,
          },
          button:{
             backgroundColor: "#8e38d9",
             width: '100%',
-            borderRadius: '4',
-            paddingVertical: '8',
-            marginTop: '14',
+            borderRadius: 4,
+            paddingVertical: 8,
+            marginTop: 8,
             justifyContent: 'center',
             alighItens: 'center',
          },
          buttonText:{
             color: '#FFF',
-            fontSize: '18',
+            fontSize: 18,
             fontWeight: 'bold',
          },
          buttonRegister:{
-            marginTop: '14',
+            marginTop: 14,
             alighSelf: 'center',
          },
          registerText: {
