@@ -10,14 +10,14 @@ export default function Welcome() {
     return (
         <View style={styles.container}>
 
-           <view style={styles.containerLogo}>
+           <View style={styles.containerLogo}>
             <Animatable.Image
             animation="flipInY" 
             source={require('../../assets/logo.png')}
             style={{ width: '100%' }}
             resizeMode= "contain"
             />
-           </view>
+           </View>
 
            <Animatable.View delay={600} animation="fadeInUp" style={styles.containerform}>
             <Text style={styles.title}>Mensagens e chamadas em qualquer lugar!</Text>
