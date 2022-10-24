@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, StyleSheet, TextInput, TouchableOpacity} from 'react-native';
 
-import * as Animatable from 'react-native-animatable'
+import * as Animatable from 'react-native-animatable';
 
 export default function SignIn() {
     return (
@@ -10,7 +10,7 @@ export default function SignIn() {
             <Text style={styles.message}>Bem-vindo(a)!</Text>
          </Animatable.View>
 
-           <Animatable.View animation="fadeInUp" style={styles.containerForm}>
+           <Animatable.View animation="fadeInUp" style={styles.form}>
             <Text Style={styles.title}>Email</Text>
             <TextInput
             placeholder="Digite um email..."
@@ -18,7 +18,7 @@ export default function SignIn() {
             />
 
            <Text Style={styles.title}>Senha</Text>
-            <TextInput
+           <TextInput
             placeholder="Sua senha..."
             style={styles.input}
             />
@@ -29,23 +29,20 @@ export default function SignIn() {
 
 
             <TouchableOpacity style={styles.buttonRegister}>
-               <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
+            <Text style={styles.registerText}>Não possui uma conta? Cadastre-se</Text>
             </TouchableOpacity>
 
-
-
-
-           </Animatable.View>
+         </Animatable.View>
 
         </View>
-       );
+      );
    
     };
 
 
     const styles = StyleSheet.create({
       container: {
-         flex:1,
+         flex: 1,
          backgroundColor: "#8e38d9",
          containerHeader:{
             marginTop: '14%',
@@ -57,7 +54,7 @@ export default function SignIn() {
             fontWeight: 'bold',
             color: '#FFF',
          },
-         containerForm: {
+         form: {
             backgroundColor: '#FFF',
             flex: 1,
             borderTopLeftRadius: 25,
@@ -80,7 +77,7 @@ export default function SignIn() {
             width: '100%',
             borderRadius: 4,
             paddingVertical: 8,
-            marginTop: 14,
+            marginTop: 8,
             justifyContent: 'center',
             alighItens: 'center',
          },
@@ -95,7 +92,7 @@ export default function SignIn() {
          },
          registerText: {
             color: '#a1a1a1'
-         }
+         },
 
       }
     });

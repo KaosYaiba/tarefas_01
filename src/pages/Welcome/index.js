@@ -26,23 +26,22 @@ export default function Welcome() {
             <TouchableOpacity 
              style={styles.button}>
              onPress={() => navigation.navigate('SignIn')}
-               <Text style={styles.buttonText}>Entrar</Text>
+            <Text style={styles.buttonText}>Entrar</Text>
             </TouchableOpacity>
 
            </Animatable.View>
 
-        </View>
+         </View>
        );
    
-    }
-
-    const styles = StyleSheet.create({
+}
+   const styles = StyleSheet.create({
       container: {
-       flex:1,
+       flex: 1,
        backgroundColor: "#8e38d9",
       },
       containerLogo:{
-         flex:2,
+         flex: 2,
          backgroundColor: "#8e38d9",
          justifyContent: 'center',
          alighItems: 'center',
@@ -82,4 +81,4 @@ export default function Welcome() {
          color: 'FFF',
          fontWeight: 'bold',
       },
-    })
+   })
