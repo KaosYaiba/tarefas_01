@@ -40,12 +40,12 @@ export default function SignIn() {
         </View>
        );
    
-    }
+    };
 
 
     const styles = StyleSheet.create({
       container: {
-         flex: 1,
+         flex:1,
          backgroundColor: "#8e38d9",
          containerHeader:{
             marginTop: '14%',
@@ -94,8 +94,8 @@ export default function SignIn() {
             alighSelf: 'center',
          },
          registerText: {
-            color: '#a1a1a1',
-         },
+            color: '#a1a1a1'
+         }
 
       }
     });

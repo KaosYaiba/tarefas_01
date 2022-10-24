@@ -19,7 +19,7 @@ export default function Welcome() {
             />
            </View>
 
-           <Animatable.View delay={600} animation="fadeInUp" style={styles.containerform}>
+           <Animatable.View delay={600} animation="fadeInUp" style={styles.containerForm}>
             <Text style={styles.title}>Mensagens e chamadas em qualquer lugar!</Text>
             <Text style={styles.text}>Faça o login</Text>
 
@@ -47,7 +47,7 @@ export default function Welcome() {
          justifyContent: 'center',
          alighItems: 'center',
       },
-      containerform: {
+      containerForm: {
          flex: 1,
          backgroundColor: "#FFF",
          borderTopLeftRadius: 25,
