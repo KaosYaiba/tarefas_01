@@ -77,7 +77,7 @@ export default function SignIn() {
             width: '100%',
             borderRadius: 4,
             paddingVertical: 8,
-            marginTop: 8,
+            marginTop: 14,
             justifyContent: 'center',
             alighItens: 'center',
          },
