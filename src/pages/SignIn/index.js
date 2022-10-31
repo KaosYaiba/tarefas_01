@@ -5,12 +5,12 @@ import * as Animatable from 'react-native-animatable';
 
 export default function SignIn() {
     return (
-        <View style={StyleSheet.container}>
-         <Animatable.View animation="fadeInLeft" delay={500} style={StyleSheet.containerHeader}>
+        <View style={styles.container}>
+         <Animatable.View animation="fadeInLeft" delay={500} style={styles.containerHeader}>
             <Text style={styles.message}>Bem-vindo(a)!</Text>
          </Animatable.View>
 
-           <Animatable.View animation="fadeInUp" style={styles.form}>
+           <Animatable.View animation="fadeInUp" style={styles.containerForm}>
             <Text style={styles.title}>Email</Text>
             <TextInput
             placeholder="Digite um email..."
@@ -54,7 +54,7 @@ export default function SignIn() {
             fontWeight: 'bold',
             color: '#FFF',
          },
-         form: {
+         containerForm: {
             backgroundColor: '#FFF',
             flex: 1,
             borderTopLeftRadius: 25,
@@ -95,4 +95,4 @@ export default function SignIn() {
          },
 
       }
-    });
+    })
